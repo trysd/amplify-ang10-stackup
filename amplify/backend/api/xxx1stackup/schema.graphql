@@ -1,0 +1,15 @@
+type Restaurant
+  @model
+{
+  id: ID!
+  name: String!
+  description: String!
+  city: String!
+  userId: String!
+  addx: Addx
+}
+
+type Addx @model {
+  id: ID!
+  ads: String!
+}

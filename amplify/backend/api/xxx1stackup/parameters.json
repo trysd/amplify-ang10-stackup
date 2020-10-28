@@ -1,0 +1,5 @@
+{
+    "AppSyncApiName": "xxx1stackup",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false
+}

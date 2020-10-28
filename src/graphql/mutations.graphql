@@ -1,0 +1,94 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateRestaurant(
+  $input: CreateRestaurantInput!
+  $condition: ModelRestaurantConditionInput
+) {
+  createRestaurant(input: $input, condition: $condition) {
+    id
+    name
+    description
+    city
+    userId
+    addx {
+      id
+      ads
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateRestaurant(
+  $input: UpdateRestaurantInput!
+  $condition: ModelRestaurantConditionInput
+) {
+  updateRestaurant(input: $input, condition: $condition) {
+    id
+    name
+    description
+    city
+    userId
+    addx {
+      id
+      ads
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteRestaurant(
+  $input: DeleteRestaurantInput!
+  $condition: ModelRestaurantConditionInput
+) {
+  deleteRestaurant(input: $input, condition: $condition) {
+    id
+    name
+    description
+    city
+    userId
+    addx {
+      id
+      ads
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateAddx(
+  $input: CreateAddxInput!
+  $condition: ModelAddxConditionInput
+) {
+  createAddx(input: $input, condition: $condition) {
+    id
+    ads
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateAddx(
+  $input: UpdateAddxInput!
+  $condition: ModelAddxConditionInput
+) {
+  updateAddx(input: $input, condition: $condition) {
+    id
+    ads
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteAddx(
+  $input: DeleteAddxInput!
+  $condition: ModelAddxConditionInput
+) {
+  deleteAddx(input: $input, condition: $condition) {
+    id
+    ads
+    createdAt
+    updatedAt
+  }
+}

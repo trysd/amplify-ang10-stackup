@@ -1,0 +1,65 @@
+# this is an auto generated file. This will be overwritten
+query GetRestaurant($id: ID!) {
+  getRestaurant(id: $id) {
+    id
+    name
+    description
+    city
+    userId
+    addx {
+      id
+      ads
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+query ListRestaurants(
+  $filter: ModelRestaurantFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listRestaurants(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      description
+      city
+      userId
+      addx {
+        id
+        ads
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetAddx($id: ID!) {
+  getAddx(id: $id) {
+    id
+    ads
+    createdAt
+    updatedAt
+  }
+}
+query ListAddxs(
+  $filter: ModelAddxFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listAddxs(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      ads
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
